@@ -15,6 +15,7 @@
 		406387D32B58C66D00B72D1B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 406387D22B58C66D00B72D1B /* GoogleSignInSwift */; };
 		406387D52B58C72500B72D1B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387D42B58C72500B72D1B /* User.swift */; };
 		406387DB2B58C7C800B72D1B /* State in Resources */ = {isa = PBXBuildFile; fileRef = 406387DA2B58C7C800B72D1B /* State */; };
+		406387E72B59BF7800B72D1B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 406387E62B59BF7800B72D1B /* README.md */; };
 		408491522B5868B300F42274 /* FirstTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491512B5868B300F42274 /* FirstTracksApp.swift */; };
 		408491542B5868B300F42274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491532B5868B300F42274 /* ContentView.swift */; };
 		408491562B5868B400F42274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408491552B5868B400F42274 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		406387E32B58C85D00B72D1B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		406387E42B58C85D00B72D1B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		406387E52B58C85D00B72D1B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		406387E62B59BF7800B72D1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		4084914E2B5868B300F42274 /* FirstTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408491512B5868B300F42274 /* FirstTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksApp.swift; sourceTree = "<group>"; };
 		408491532B5868B300F42274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		408491452B5868B300F42274 = {
 			isa = PBXGroup;
 			children = (
+				406387E62B59BF7800B72D1B /* README.md */,
 				408491502B5868B300F42274 /* FirstTracks */,
 				408491622B5868B400F42274 /* FirstTracksTests */,
 				4084916C2B5868B400F42274 /* FirstTracksUITests */,
@@ -295,6 +298,7 @@
 			files = (
 				406387DB2B58C7C800B72D1B /* State in Resources */,
 				4084915A2B5868B400F42274 /* Preview Assets.xcassets in Resources */,
+				406387E72B59BF7800B72D1B /* README.md in Resources */,
 				408491562B5868B400F42274 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
