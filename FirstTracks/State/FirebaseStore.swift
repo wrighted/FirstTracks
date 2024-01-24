@@ -1,6 +1,6 @@
 //
 // FirebaseStore.swift
-// bespoke
+// FirstTracks
 //
 // Created by Jared Webber on 2023-12-28
 //
@@ -38,36 +38,6 @@ class FirebaseStore {
         } catch {
             print("Error decoding firebase document: \(error)")
             return nil
-        }
-    }
-
-    func fetchNotes(completion: @escaping ([Note]) -> Void) {
-        let db = Firestore.firestore()
-
-        db.collection("notes").getDocuments { querySnapshot, error in
-            if let error = error {
-                print("Error getting firebase documents: \(error)")
-                completion([])
-
-            } else {
-                let notes: [Note] = querySnapshot?.documents.compactMap { document in
-                    let data = document.data()
-
-                    do {
-                        var note = try Firestore.Decoder().decode(Note.self, from: data)
-                        note.id = document.documentID
-
-                        return note
-
-                    } catch {
-                        print("Error decoding firebase document: \(error)")
-                        return nil
-                    }
-                } ?? []
-
-                let sortedNotes = notes.sorted { $0.timestamp > $1.timestamp }
-                completion(sortedNotes)
-            }
         }
     }
 }

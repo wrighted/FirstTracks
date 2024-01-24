@@ -14,8 +14,22 @@
 		406387D12B58C66D00B72D1B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 406387D02B58C66D00B72D1B /* GoogleSignIn */; };
 		406387D32B58C66D00B72D1B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 406387D22B58C66D00B72D1B /* GoogleSignInSwift */; };
 		406387D52B58C72500B72D1B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387D42B58C72500B72D1B /* User.swift */; };
-		406387DB2B58C7C800B72D1B /* State in Resources */ = {isa = PBXBuildFile; fileRef = 406387DA2B58C7C800B72D1B /* State */; };
 		406387E72B59BF7800B72D1B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 406387E62B59BF7800B72D1B /* README.md */; };
+		4072C5422B5B53FD0012202C /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387DF2B58C85D00B72D1B /* DashboardView.swift */; };
+		4072C5432B5B53FD0012202C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E12B58C85D00B72D1B /* ProfileView.swift */; };
+		4072C5442B5B53FD0012202C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E42B58C85D00B72D1B /* LoginView.swift */; };
+		4072C5452B5B53FD0012202C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E32B58C85D00B72D1B /* CardView.swift */; };
+		4072C5462B5B53FD0012202C /* SetTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E02B58C85D00B72D1B /* SetTrackView.swift */; };
+		4072C5472B5B53FD0012202C /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E52B58C85D00B72D1B /* AccountView.swift */; };
+		4072C5482B5B53FD0012202C /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406387E22B58C85D00B72D1B /* WorkoutsView.swift */; };
+		4072C54D2B5B541F0012202C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072C54B2B5B541F0012202C /* AuthManager.swift */; };
+		4072C54E2B5B541F0012202C /* FirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072C5492B5B541E0012202C /* FirebaseStore.swift */; };
+		4072C54F2B5B541F0012202C /* GoogleSignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072C54C2B5B541F0012202C /* GoogleSignInManager.swift */; };
+		4072C5502B5B541F0012202C /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072C54A2B5B541F0012202C /* LocalStore.swift */; };
+		407C63C02B608A990079CF28 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C63BF2B608A990079CF28 /* WeatherView.swift */; };
+		407C63C22B6090D80079CF28 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C63C12B6090D80079CF28 /* TabItem.swift */; };
+		407C63C52B6194940079CF28 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407C63C42B6194940079CF28 /* credentials.plist */; };
+		407C63C72B61956E0079CF28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407C63C62B61956E0079CF28 /* GoogleService-Info.plist */; };
 		408491522B5868B300F42274 /* FirstTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491512B5868B300F42274 /* FirstTracksApp.swift */; };
 		408491542B5868B300F42274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491532B5868B300F42274 /* ContentView.swift */; };
 		408491562B5868B400F42274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408491552B5868B400F42274 /* Assets.xcassets */; };
@@ -44,7 +58,6 @@
 
 /* Begin PBXFileReference section */
 		406387D42B58C72500B72D1B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		406387DA2B58C7C800B72D1B /* State */ = {isa = PBXFileReference; lastKnownFileType = folder; path = State; sourceTree = "<group>"; };
 		406387DF2B58C85D00B72D1B /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		406387E02B58C85D00B72D1B /* SetTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTrackView.swift; sourceTree = "<group>"; };
 		406387E12B58C85D00B72D1B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -53,6 +66,14 @@
 		406387E42B58C85D00B72D1B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		406387E52B58C85D00B72D1B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		406387E62B59BF7800B72D1B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		4072C5492B5B541E0012202C /* FirebaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStore.swift; sourceTree = "<group>"; };
+		4072C54A2B5B541F0012202C /* LocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		4072C54B2B5B541F0012202C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		4072C54C2B5B541F0012202C /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
+		407C63BF2B608A990079CF28 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		407C63C12B6090D80079CF28 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		407C63C42B6194940079CF28 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../Downloads/credentials.plist; sourceTree = "<group>"; };
+		407C63C62B61956E0079CF28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4084914E2B5868B300F42274 /* FirstTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408491512B5868B300F42274 /* FirstTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksApp.swift; sourceTree = "<group>"; };
 		408491532B5868B300F42274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,7 +118,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		406387DD2B58C83100B72D1B /* Models */ = {
+		4072C5512B5B58C30012202C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				407C63BE2B608A7B0079CF28 /* Shared */,
+				406387DF2B58C85D00B72D1B /* DashboardView.swift */,
+				406387E02B58C85D00B72D1B /* SetTrackView.swift */,
+				406387E12B58C85D00B72D1B /* ProfileView.swift */,
+				406387E22B58C85D00B72D1B /* WorkoutsView.swift */,
+				406387E42B58C85D00B72D1B /* LoginView.swift */,
+				406387E52B58C85D00B72D1B /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4072C5532B5B59090012202C /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4072C54B2B5B541F0012202C /* AuthManager.swift */,
+				4072C5492B5B541E0012202C /* FirebaseStore.swift */,
+				4072C54C2B5B541F0012202C /* GoogleSignInManager.swift */,
+				4072C54A2B5B541F0012202C /* LocalStore.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		4072C5542B5B59120012202C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				406387D42B58C72500B72D1B /* User.swift */,
@@ -105,23 +151,27 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		406387DE2B58C85D00B72D1B /* Views */ = {
+		407C63BE2B608A7B0079CF28 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				406387DF2B58C85D00B72D1B /* DashboardView.swift */,
-				406387E02B58C85D00B72D1B /* SetTrackView.swift */,
-				406387E12B58C85D00B72D1B /* ProfileView.swift */,
-				406387E22B58C85D00B72D1B /* WorkoutsView.swift */,
 				406387E32B58C85D00B72D1B /* CardView.swift */,
-				406387E42B58C85D00B72D1B /* LoginView.swift */,
-				406387E52B58C85D00B72D1B /* AccountView.swift */,
+				407C63BF2B608A990079CF28 /* WeatherView.swift */,
 			);
-			path = Views;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		407C63C32B60920B0079CF28 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		408491452B5868B300F42274 = {
 			isa = PBXGroup;
 			children = (
+				407C63C62B61956E0079CF28 /* GoogleService-Info.plist */,
+				407C63C42B6194940079CF28 /* credentials.plist */,
 				406387E62B59BF7800B72D1B /* README.md */,
 				408491502B5868B300F42274 /* FirstTracks */,
 				408491622B5868B400F42274 /* FirstTracksTests */,
@@ -143,14 +193,16 @@
 		408491502B5868B300F42274 /* FirstTracks */ = {
 			isa = PBXGroup;
 			children = (
-				406387DA2B58C7C800B72D1B /* State */,
-				406387DE2B58C85D00B72D1B /* Views */,
-				406387DD2B58C83100B72D1B /* Models */,
+				407C63C32B60920B0079CF28 /* Protocols */,
+				4072C5532B5B59090012202C /* State */,
+				4072C5542B5B59120012202C /* Models */,
+				4072C5512B5B58C30012202C /* Views */,
 				408491512B5868B300F42274 /* FirstTracksApp.swift */,
 				408491532B5868B300F42274 /* ContentView.swift */,
 				408491552B5868B400F42274 /* Assets.xcassets */,
 				408491572B5868B400F42274 /* FirstTracks.entitlements */,
 				408491582B5868B400F42274 /* Preview Content */,
+				407C63C12B6090D80079CF28 /* TabItem.swift */,
 			);
 			path = FirstTracks;
 			sourceTree = "<group>";
@@ -296,8 +348,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406387DB2B58C7C800B72D1B /* State in Resources */,
 				4084915A2B5868B400F42274 /* Preview Assets.xcassets in Resources */,
+				407C63C52B6194940079CF28 /* credentials.plist in Resources */,
+				407C63C72B61956E0079CF28 /* GoogleService-Info.plist in Resources */,
 				406387E72B59BF7800B72D1B /* README.md in Resources */,
 				408491562B5868B400F42274 /* Assets.xcassets in Resources */,
 			);
@@ -324,7 +377,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				407C63C02B608A990079CF28 /* WeatherView.swift in Sources */,
+				4072C5452B5B53FD0012202C /* CardView.swift in Sources */,
+				4072C5502B5B541F0012202C /* LocalStore.swift in Sources */,
+				4072C5462B5B53FD0012202C /* SetTrackView.swift in Sources */,
+				4072C5442B5B53FD0012202C /* LoginView.swift in Sources */,
 				408491542B5868B300F42274 /* ContentView.swift in Sources */,
+				4072C54F2B5B541F0012202C /* GoogleSignInManager.swift in Sources */,
+				4072C54E2B5B541F0012202C /* FirebaseStore.swift in Sources */,
+				4072C5422B5B53FD0012202C /* DashboardView.swift in Sources */,
+				4072C5432B5B53FD0012202C /* ProfileView.swift in Sources */,
+				407C63C22B6090D80079CF28 /* TabItem.swift in Sources */,
+				4072C5482B5B53FD0012202C /* WorkoutsView.swift in Sources */,
+				4072C5472B5B53FD0012202C /* AccountView.swift in Sources */,
+				4072C54D2B5B541F0012202C /* AuthManager.swift in Sources */,
 				408491522B5868B300F42274 /* FirstTracksApp.swift in Sources */,
 				406387D52B58C72500B72D1B /* User.swift in Sources */,
 			);
@@ -508,7 +574,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrighte.FirstTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -546,7 +613,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wrighte.FirstTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

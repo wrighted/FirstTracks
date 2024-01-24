@@ -1,6 +1,6 @@
 //
 // ProfileView.swift
-// bespoke
+// FirstTracks
 //
 // Created by Jared Webber on 2023-09-25
 //
@@ -26,36 +26,65 @@ struct ProfileView: View {
     }
 
     var body: some View {
-        Form {
-            if authManager.authState == .signedIn {
-                Section(header: Text("Profile Information")) {
-                    TextField("First Name", text: $firstName)
-                    TextField("Last Name", text: $lastName)
-                    Text($user.wrappedValue.email ?? "") // Email can't be modified due to OAuth
-                    TextField("Username", text: $username)
+        NavigationView{
+            Form {
+                if authManager.authState == .signedIn {
+                    Section(header: Text("Profile Information")) {
+                        TextField("First Name", text: $firstName)
+                        TextField("Last Name", text: $lastName)
+                        Text($user.wrappedValue.email ?? "") // Email can't be modified due to OAuth
+                        TextField("Username", text: $username)
+                    }
                 }
             }
-        }
-        .navigationBarTitle("Profile")
-        .navigationBarItems(
-            trailing: Button(action: {
-                $user.wrappedValue.firstName = firstName
-                $user.wrappedValue.lastName = lastName
-                $user.wrappedValue.username = username
-                updateUser(user: $user.wrappedValue)
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Text("Save")
+            .navigationTitle("Profile")
+            #if os(macOS)
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    Button(action: {
+                        $user.wrappedValue.firstName = firstName
+                        $user.wrappedValue.lastName = lastName
+                        $user.wrappedValue.username = username
+                        updateUser(user: $user.wrappedValue)
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Text("Save")
+                    }
+                }
             }
-        )
-        .navigationBarItems(trailing:
-            Button {
-                signOut()
+            .toolbar {
+                ToolbarItem(placement: .automatic) {
+                    Button {
+                        signOut()
 
-            } label: {
-                Text("Sign Out")
+                    } label: {
+                        Text("Sign Out")
+                    }
+                }
             }
-        )
+            
+            #else
+            .navigationBarItems(
+                trailing: Button(action: {
+                    $user.wrappedValue.firstName = firstName
+                    $user.wrappedValue.lastName = lastName
+                    $user.wrappedValue.username = username
+                    updateUser(user: $user.wrappedValue)
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("Save")
+                }
+            )
+            .navigationBarItems(trailing:
+                Button {
+                    signOut()
+
+                } label: {
+                    Text("Sign Out")
+                }
+            )
+            #endif
+        }
     }
 
     func signOut() {

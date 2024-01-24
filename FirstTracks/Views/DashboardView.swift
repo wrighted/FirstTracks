@@ -7,9 +7,18 @@
 
 import SwiftUI
 
-struct DashboardView: View {
+struct DashboardView: View, TabItem {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                CardView(title: "Conditions", content: WeatherView(), height: 200)
+            }
+        }
+        
+    }
+    
+    var tabItem: some View {
+        Label("Dash", systemImage: "1.circle")
     }
 }
 

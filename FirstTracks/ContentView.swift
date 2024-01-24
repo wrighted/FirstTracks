@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
         TabView {
             DashboardView()
                 .tabItem {
-                    Label("Dash", systemImage: "1.circle")
+                    DashboardView().tabItem
                 }
 
             WorkoutsView()
@@ -27,15 +29,15 @@ struct ContentView: View {
                     Image(systemName: "3.circle")
                 }
             
-            AccountView()
+            AccountView().environmentObject(authManager)
                 .tabItem {
                     Text("Account")
-                    Image(systemName: "3.circle")
+                    Image(systemName: "4.circle")
                 }
         }
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(AuthManager())
 }

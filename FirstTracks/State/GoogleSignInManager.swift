@@ -1,10 +1,11 @@
 //
 // GoogleSignInManager.swift
-// bespoke
+// FirstTracks
 //
 // Created by Jared Webber on 2023-12-28
 //
 
+import SwiftUI
 import Foundation
 import GoogleSignIn
 

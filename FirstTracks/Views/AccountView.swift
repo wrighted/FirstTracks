@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct AccountView: View {
+    @EnvironmentObject var authManager: AuthManager
+    @State private var activeUser: User = getActiveUser()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if authManager.authState != .signedIn {
+            LoginView()
+        }
+        else {
+            ProfileView(user: $activeUser).environmentObject(authManager)
+        }
     }
-}
-
-#Preview {
-    AccountView()
 }

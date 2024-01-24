@@ -1,6 +1,6 @@
 //
 //  CardView.swift
-//  BeSpoke
+//  FirstTracks
 //
 //  Created by Jared Webber on 2023-08-24.
 //
@@ -8,9 +8,15 @@
 import Foundation
 import SwiftUI
 
-struct CardView: View {
+protocol CardContentView {
+    associatedtype ContentBody: View
+    var body: ContentBody { get }
+}
+
+struct CardView<Content: CardContentView>: View {
     var title: String
-    var content: AnyView
+    var content: Content
+    var height: CGFloat
 
     var body: some View {
         ZStack {
@@ -21,10 +27,11 @@ struct CardView: View {
                         .padding()
                     Spacer()
                 }
-                content.padding()
+                .padding()
+                content.body.padding()
                 Spacer()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: height)
             .background(.gray.opacity(0.5))
             .cornerRadius(20)
             .padding()

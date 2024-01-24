@@ -1,6 +1,6 @@
 //
 // AuthManager.swift
-// bespoke
+// FirstTracks
 //
 // Created by Jared Webber on 2023-12-27
 //
