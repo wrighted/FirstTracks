@@ -8,17 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authManager: AuthManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            DashboardView()
+                .tabItem {
+                    DashboardView().tabItem
+                }
+
+            WorkoutsView()
+                .tabItem {
+                    Image(systemName: "2.circle")
+                    Text("Ski Log")
+                }
+            
+            SetTrackView()
+                .tabItem {
+                    Text("Set Tracks")
+                    Image(systemName: "3.circle")
+                }
+            
+            AccountView().environmentObject(authManager)
+                .tabItem {
+                    Text("Account")
+                    Image(systemName: "4.circle")
+                }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(AuthManager())
 }
