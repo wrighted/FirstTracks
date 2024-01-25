@@ -28,8 +28,6 @@
 		4072C5502B5B541F0012202C /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4072C54A2B5B541F0012202C /* LocalStore.swift */; };
 		407C63C02B608A990079CF28 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C63BF2B608A990079CF28 /* WeatherView.swift */; };
 		407C63C22B6090D80079CF28 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407C63C12B6090D80079CF28 /* TabItem.swift */; };
-		407C63C52B6194940079CF28 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407C63C42B6194940079CF28 /* credentials.plist */; };
-		407C63C72B61956E0079CF28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407C63C62B61956E0079CF28 /* GoogleService-Info.plist */; };
 		408491522B5868B300F42274 /* FirstTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491512B5868B300F42274 /* FirstTracksApp.swift */; };
 		408491542B5868B300F42274 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491532B5868B300F42274 /* ContentView.swift */; };
 		408491562B5868B400F42274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408491552B5868B400F42274 /* Assets.xcassets */; };
@@ -37,6 +35,7 @@
 		408491642B5868B400F42274 /* FirstTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491632B5868B400F42274 /* FirstTracksTests.swift */; };
 		4084916E2B5868B400F42274 /* FirstTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084916D2B5868B400F42274 /* FirstTracksUITests.swift */; };
 		408491702B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084916F2B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift */; };
+		9FA22B262B62EB12001551CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FA22B252B62EB12001551CE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +71,6 @@
 		4072C54C2B5B541F0012202C /* GoogleSignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInManager.swift; sourceTree = "<group>"; };
 		407C63BF2B608A990079CF28 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		407C63C12B6090D80079CF28 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
-		407C63C42B6194940079CF28 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../Downloads/credentials.plist; sourceTree = "<group>"; };
-		407C63C62B61956E0079CF28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4084914E2B5868B300F42274 /* FirstTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408491512B5868B300F42274 /* FirstTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksApp.swift; sourceTree = "<group>"; };
 		408491532B5868B300F42274 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +82,8 @@
 		408491692B5868B400F42274 /* FirstTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4084916D2B5868B400F42274 /* FirstTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksUITests.swift; sourceTree = "<group>"; };
 		4084916F2B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FA22B252B62EB12001551CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9FA22B292B62ECE6001551CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +169,7 @@
 		408491452B5868B300F42274 = {
 			isa = PBXGroup;
 			children = (
-				407C63C62B61956E0079CF28 /* GoogleService-Info.plist */,
-				407C63C42B6194940079CF28 /* credentials.plist */,
+				9FA22B252B62EB12001551CE /* GoogleService-Info.plist */,
 				406387E62B59BF7800B72D1B /* README.md */,
 				408491502B5868B300F42274 /* FirstTracks */,
 				408491622B5868B400F42274 /* FirstTracksTests */,
@@ -193,6 +191,7 @@
 		408491502B5868B300F42274 /* FirstTracks */ = {
 			isa = PBXGroup;
 			children = (
+				9FA22B292B62ECE6001551CE /* Info.plist */,
 				407C63C32B60920B0079CF28 /* Protocols */,
 				4072C5532B5B59090012202C /* State */,
 				4072C5542B5B59120012202C /* Models */,
@@ -349,10 +348,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4084915A2B5868B400F42274 /* Preview Assets.xcassets in Resources */,
-				407C63C52B6194940079CF28 /* credentials.plist in Resources */,
-				407C63C72B61956E0079CF28 /* GoogleService-Info.plist in Resources */,
 				406387E72B59BF7800B72D1B /* README.md in Resources */,
 				408491562B5868B400F42274 /* Assets.xcassets in Resources */,
+				9FA22B262B62EB12001551CE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,10 +550,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstTracks/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VTSX44YHP;
+				DEVELOPMENT_TEAM = P5CMMG53U6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstTracks/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -591,10 +590,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FirstTracks/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VTSX44YHP;
+				DEVELOPMENT_TEAM = P5CMMG53U6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FirstTracks/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
