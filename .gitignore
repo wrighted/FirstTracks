@@ -90,4 +90,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Things ethan thought might help
-FirstTracks.xcodeproj//xcuserdata
+FirstTracks.xcodeproj/xcuserdata
+FirstTracks.xcodeproj/project.xcworkspace/xcuserdata
+
