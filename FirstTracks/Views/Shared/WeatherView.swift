@@ -28,7 +28,7 @@ struct BarView: View {
             Spacer()
             Rectangle()
                 .fill(Color.blue)
-                .frame(width: 30, height: CGFloat(value * 50)) // Adjust height based on the data
+                .frame(width: 30, height: CGFloat(value * 10)) // Adjust height based on the data
             Text(String(format: "%.1f", value))
                 .padding(.top, 5)
         }

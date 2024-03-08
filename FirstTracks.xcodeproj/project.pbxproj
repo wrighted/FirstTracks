@@ -35,6 +35,8 @@
 		408491642B5868B400F42274 /* FirstTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408491632B5868B400F42274 /* FirstTracksTests.swift */; };
 		4084916E2B5868B400F42274 /* FirstTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084916D2B5868B400F42274 /* FirstTracksUITests.swift */; };
 		408491702B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4084916F2B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift */; };
+		40CEAA0C2B9AD71200679C62 /* SkiTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEAA0B2B9AD71200679C62 /* SkiTrack.swift */; };
+		40CEAA0E2B9AE62700679C62 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CEAA0D2B9AE62700679C62 /* CardStack.swift */; };
 		9FA22B262B62EB12001551CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FA22B252B62EB12001551CE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		408491692B5868B400F42274 /* FirstTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4084916D2B5868B400F42274 /* FirstTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksUITests.swift; sourceTree = "<group>"; };
 		4084916F2B5868B400F42274 /* FirstTracksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTracksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40CEAA0B2B9AD71200679C62 /* SkiTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiTrack.swift; sourceTree = "<group>"; };
+		40CEAA0D2B9AE62700679C62 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 		9FA22B252B62EB12001551CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9FA22B292B62ECE6001551CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				406387D42B58C72500B72D1B /* User.swift */,
+				40CEAA0B2B9AD71200679C62 /* SkiTrack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			children = (
 				406387E32B58C85D00B72D1B /* CardView.swift */,
 				407C63BF2B608A990079CF28 /* WeatherView.swift */,
+				40CEAA0D2B9AE62700679C62 /* CardStack.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -383,7 +389,9 @@
 				408491542B5868B300F42274 /* ContentView.swift in Sources */,
 				4072C54F2B5B541F0012202C /* GoogleSignInManager.swift in Sources */,
 				4072C54E2B5B541F0012202C /* FirebaseStore.swift in Sources */,
+				40CEAA0E2B9AE62700679C62 /* CardStack.swift in Sources */,
 				4072C5422B5B53FD0012202C /* DashboardView.swift in Sources */,
+				40CEAA0C2B9AD71200679C62 /* SkiTrack.swift in Sources */,
 				4072C5432B5B53FD0012202C /* ProfileView.swift in Sources */,
 				407C63C22B6090D80079CF28 /* TabItem.swift in Sources */,
 				4072C5482B5B53FD0012202C /* WorkoutsView.swift in Sources */,

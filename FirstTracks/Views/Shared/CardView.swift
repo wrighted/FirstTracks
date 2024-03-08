@@ -13,13 +13,23 @@ protocol CardContentView {
     var body: ContentBody { get }
 }
 
+struct EmptyCardContentView: CardContentView {
+    var body: some View {
+        EmptyView()
+    }
+}
+
 struct CardView<Content: CardContentView>: View {
     var title: String
     var content: Content
     var height: CGFloat
+    var colour: Color
 
     var body: some View {
         ZStack {
+            RoundedRectangle(cornerRadius: 15)
+                .fill(colour.gradient)
+            
             VStack {
                 HStack {
                     Text(title)
@@ -32,9 +42,9 @@ struct CardView<Content: CardContentView>: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: height)
-            .background(.gray.opacity(0.5))
             .cornerRadius(20)
             .padding()
         }
     }
 }
+
